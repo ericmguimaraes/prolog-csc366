@@ -1,0 +1,4 @@
+anything to pdf
+enscript manual.txt -o - | ps2pdf - manual.pdf
+
+

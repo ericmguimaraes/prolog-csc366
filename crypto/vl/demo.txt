@@ -1,0 +1,30 @@
+Problem: numbers = (9,14,4,3,4} and goal = 5
+Solution: ((14 - 9) + ((4-4)/3)) = 5
+
+Problem: numbers = (13,2,2,4,4} and goal = 11
+Solution: ((13 - (2/2)) - (4/4))
+
+Problem: numbers = (9,4,2,7,6} and goal = 10
+Solution: ((6 + 4) + (9 - (7 + 2 )))
+
+Problem: numbers = (15,9,12,1,1} and goal = 7
+Solution:  ((9 - (15 -(12/1))) + 1)
+
+Problem: numbers = (12,5,3,4,2} and goal = 9
+Solution: (5 + (((12/3) + 4)/2))
+
+Problem: numbers = (5,8,5,15,2} and goal = 2
+Solution: (2 + (((15/5)+5) - 8))
+
+Problem: numbers = (6,9,11,14,9} and goal = 0
+Solution: (11 - (14 - ((9+9)/6)))
+
+Problem: numbers = (5,4,7,4,11} and goal = 10
+Solution: (((( 5 + 7 ) / 4 ) - 4 ) + 11)
+
+Problem: numbers = (10,3,15,6,2} and goal = 3
+Solution: ((((15/3) - 10) + 2) + 6)
+
+Problem: numbers = (8,3,11,3,7} and goal = 11
+Solution:  ((((3/3) + 11) - 8) + 7)
+

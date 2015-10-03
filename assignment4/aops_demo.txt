@@ -1,0 +1,64 @@
+?- consult('aops.pro').
+% aops.pro compiled 0.00 sec, 17 clauses
+true.
+
+?- declare(a,2).
+true.
+
+?- declare(b,4).
+true.
+
+?- declare(c,0).
+true.
+
+?- displayBindings.
+a => 2
+b => 4
+c => 0
+true.
+
+?- add(a,b,c).
+true.
+
+?- displayBindings.
+a => 2
+b => 4
+c => 6
+true.
+
+?- sub(a,b,c).
+true.
+
+?- displayBindings.
+a => 2
+b => 4
+c => -2
+true.
+
+?- mul(a,b,c).
+true.
+
+?- displayBindings.
+a => 2
+b => 4
+c => 8
+true.
+
+?- div(a,b,c).
+true.
+
+?- displayBindings.
+a => 2
+b => 4
+c => 0.5
+true.
+
+?- pow(a,b,c).
+true.
+
+?- displayBindings.
+a => 2
+b => 4
+c => 16
+true.
+

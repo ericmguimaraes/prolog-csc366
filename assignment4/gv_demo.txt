@@ -1,0 +1,39 @@
+?- consult('gv.pro').
+% gv.pro compiled 0.00 sec, 12 clauses
+true.
+
+?- declare(pitch,c).
+true.
+
+?- declare(duration,1).
+true.
+
+?- declare(fruit,apple).
+true.
+
+?- displayBindings.
+pitch => c
+duration => 1
+fruit => apple
+true.
+
+?- valueOf(pitch,P).
+P = c.
+
+?- valueOf(duraction,D).
+false.
+
+?- valueOf(duration,D).
+D = 1.
+
+?- valueOf(fruit,F).
+F = apple.
+
+?- bind(fruit,banana).
+true.
+
+?- displayBindings.
+pitch => c
+duration => 1
+fruit => banana
+true.
