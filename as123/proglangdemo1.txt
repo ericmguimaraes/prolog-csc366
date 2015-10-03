@@ -1,0 +1,44 @@
+1 ?- language(pascal).
+false.
+
+2 ?- language(prolog).
+true.
+
+3 ?- language(X).
+X = smaltalk .
+
+4 ?- language(L).
+L = smaltalk ;
+L = lisp ;
+L = prolog.
+
+5 ?- language(Language), write(Language), nl, fail.
+smaltalk
+lisp
+prolog
+false.
+
+6 ?- essence(lisp,DT,CF).
+DT = lists,
+CF = 'recursive functions'.
+
+7 ?- essence(prolog,DT,_).
+DT = relations.
+
+8 ?- essence(prolog,_,CF).
+CF = 'logical inferencing'.
+
+9 ?- essence(L,objects,_).
+L = smaltalk.
+
+10 ?- history(lisp,I,_).
+I = inventor('Jhon McCarthy').
+
+11 ?- history(lisp,inventor(Name),_).
+Name = 'Jhon McCarthy'.
+
+12 ?- history(_,inventor(N),_),write(N),nl,fail.
+Alan Kay
+Jhon McCarthy
+Alan Colmeraur
+false.

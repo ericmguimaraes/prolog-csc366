@@ -1,0 +1,51 @@
+1 ?- language(snobol).
+true.
+
+2 ?- language(snowball).
+false.
+
+3 ?- essence(snobol, FD, _).
+FD = pattern.
+
+4 ?- essence(_, arrays, _).
+false.
+
+5 ?- language(L).
+L = smaltalk ;
+L = lisp ;
+L = prolog ;
+L = snobol ;
+L = apl.
+
+6 ?- language(L), write(L), nl, fail.
+smaltalk
+lisp
+prolog
+snobol
+apl
+false.
+
+7 ?- history(spl,inventor(Name),_).
+false.
+
+8 ?- history(apl,inventor(Name),_).
+Name = 'Kenneth Iverson'.
+
+9 ?- history(_,inventor(Name),_).
+Name = 'Alan Kay' ;
+Name = 'Jhon McCarthy' ;
+Name = 'Alan Colmeraur' ;
+Name = 'Ralph Griswold' ;
+Name = 'Kenneth Iverson'.
+
+10 ?- history(_,inventor(Name),_), write(Name),nl, fail.
+Alan Kay
+Jhon McCarthy
+Alan Colmeraur
+Ralph Griswold
+Kenneth Iverson
+false.
+
+11 ?- history(L,_,date(1959)), essence(L,lists,_).
+L = lisp ;
+false.
