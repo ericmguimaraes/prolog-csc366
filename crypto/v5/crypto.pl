@@ -27,13 +27,13 @@ generateRandomCryptoProblem :-
 	addCryptoProblemToKnowledgeBase(N1,N2,N3,N4,N5,G).
 
 addCryptoProblemToKnowledgeBase(N1,N2,N3,N4,N5,G) :-
-	retract(problem(_,_)),
-	assert(problem(numbers(N1,N2,N3,N4,N5),goal(G))).
+	undeclare(problem),
+	declare(problem,(numbers(N1,N2,N3,N4,N5),goal(G))).
 addCryptoProblemToKnowledgeBase(N1,N2,N3,N4,N5,G) :-
-	assert(problem(numbers(N1,N2,N3,N4,N5),goal(G))).
+	declare(problem,(numbers(N1,N2,N3,N4,N5),goal(G))).
 
 eraseProblem :-
-	retract(problem(_,_)),
+	undeclare(problem),
 	fail.
 eraseProblem.
 
@@ -41,7 +41,7 @@ eraseProblem.
 %
 
 displayProblem :- 
-	problem(numbers(N1,N2,N3,N4,N5),goal(G)),
+	valueOf(problem,(numbers(N1,N2,N3,N4,N5),goal(G))),
 	write('Problem: numbers = (') ,
 	write(N1), write(','), 
 	write(N2), write(','), 
@@ -88,7 +88,7 @@ substitute(New, Old, ex(X, O, Z), ex(X, O ,Q )):-
 
 displaySolution :-
 	write('Solution: '),
-	solution(S),
+	valueOf(solution,S),
 	displayResult(S),
 	nl.
 displaySolution.
@@ -111,7 +111,7 @@ displayResult(ex(A,O,B)) :-
 %
 
 solveProblemDecompositionally :- 
-	problem(numbers(N1,N2,N3,N4,N5),goal(G)),
+	valueOf(problem,(numbers(N1,N2,N3,N4,N5),goal(G))),
 	crypto(N1,N2,N3,N4,N5,G,Expression),
 	recordSolution(Expression).
 solveProblemDecompositionally :-
@@ -119,10 +119,10 @@ solveProblemDecompositionally :-
 
 recordSolution(Expression) :- 
 	eraseSolution,
-	assert(solution(Expression)).
+	declare(solution,Expression).
 
 eraseSolution :-
-	retract(solution(_)),
+	undeclare(solution),
 	fail.
 eraseSolution.
 
