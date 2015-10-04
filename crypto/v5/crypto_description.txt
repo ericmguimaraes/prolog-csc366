@@ -1,0 +1,4 @@
+The main function of the program is called crypto, it can receive crypto problems of order two, three, four or five.
+The parameters are the numbers that form the crypto problem, the goal and the solution expression.
+Depending of the number of parameters it has different behaviors, for two, the base case, it just tries to reach the goal applying
+the basic arithmetc opperations. For three, four or five numbers it uses the same algorithm,  
