@@ -1,4 +1,8 @@
 The main function of the program is called crypto, it can receive crypto problems of order two, three, four or five.
 The parameters are the numbers that form the crypto problem, the goal and the solution expression.
 Depending of the number of parameters it has different behaviors, for two, the base case, it just tries to reach the goal applying
-the basic arithmetc opperations. For three, four or five numbers it uses the same algorithm,  
+the basic arithmetic operations. For three, four or five numbers it uses the same algorithm, getting a combination of two items of the problem,
+ and trying to apply it in the base case with a basic arithmetic operation, generating a sub-goal value and a sub-goal expression, then it 
+ applies the crypto function recursively to the rest of the items, the sub goal is used as one of the items, and the original goal is also used, 
+ generating a expression with the sub-goal included as a item. The last step is to substitute the sub-goal in the final expression for the 
+ expression that generated the sub-goal.
