@@ -1,0 +1,138 @@
+
+<!-- saved from url=(0066)http://cs.oswego.edu/~blue/Fall2015/Cog366Csc366/sample/index.html -->
+<html><head>
+	<meta charset="utf-8" />
+	<title>Cog366/Csc366 Personal Work Site</title>
+    <link href="./files/basic.css" rel="stylesheet" type="text/css" media="screen">
+	
+	<!-- jQuery: Grab Google CDN jQuery. fall back to local if necessary -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
+	
+	<!-- The raptorize file  -->
+	<script src="jquery.raptorize.1.0.js"></script>
+	
+	<!-- For the button version -->
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.button').raptorize();
+		});
+	</script>
+	
+	<!-- For the Konami Code version -->
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.button').raptorize({
+				'enterOn' : 'konami-code'
+			});
+		});
+	</script>
+	
+	<!-- For the Timer version -->
+	 <script type="text/javascript">
+		$(window).load(function() {
+			$('.button').raptorize({
+				'enterOn' : 'timer',
+				'delayTime' : 500000
+			});
+		});
+	</script>
+
+<style type="text/css">
+  .DateRange, .DateDiv { display: none; }
+</style>
+
+<script type="text/JavaScript">
+$(function() {
+    $(".DateDiv").each(function(index) {
+        var dtFrom = new Date($(this).find(".DateRange").html());
+        var dtNow = new Date();
+        if (dtNow >= dtFrom)
+            $(this).show();
+    });
+});
+</script>
+	
+</head>
+<body>
+ 
+<h1>Cog366/Csc366 Course Portfolio, Fall 2015</h1>
+<p class="intro">   
+  Eric Guimaraes<br>
+  Last revised on 10/3/2015
+</p>
+
+<p class="description">This site represents work that I have done in support of my efforts to learn to program in the Cog366/Csc366 course at SUNY Oswego during the Fall 2015 semester. The materials will be temporally organized for the most part. Links to external sites that pertain to materials that relate to the course will be placed after the personally created artifacts.
+</p>
+
+<p class="activity"> <b>Assignment 1: Getting Started</b> 
+  The first assignment entailed the setting up of an appropriate environment to do some prolog programming in this course. For me, this amounted to remembering how to run a Prolog and launch the emacs text eitor. Beyond this, the charge was to mimic a very short
+  <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/proglangdemo.pdf">demo</a> 
+ presented in class to load and list a first programming language knowledge base.<br>
+
+</p>
+
+<p class="activity"> <b>Assignment 2: Programming Languages KB</b> 
+  For this assignment we had to establish a
+  <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/proglang.pl">knowledge base</a>
+  about programming languages and then
+  <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/proglangdemo1.txt">mimic a demo</a>
+  which queried the KB in a straightforward manner. We were then asked to
+  <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/proglang_plus.pl">augment the KB</a>
+  with facts about two additional programming languages and
+  <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/proglangdemo2.txt">pose specific queries</a>
+  to the augmented KB.
+</p>
+
+<p class="activity"> <b>Assignment 3: Wild Card</b>
+  This assignment consisted of four tasks. The first task centered on building a
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/robotkb.pdf">knowledge base in Prolog</a> 
+  to model some aspect of some world. The second task was to translate the Prolog knowledge base into a more or less equivalent
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/robotkb_en.pdf">English knowledge base</a>
+  . The third task was to 
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/robotkb_query.pdf">query the KB</a>
+in a manner that adheres to a few constraints. The fourth task amounted to adding
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/robotkb_query_en.pdf">English annotations</a>
+  to each of the queries posed in the third task.
+</p>
+
+
+<p class="activity"> <b>Assignment 4: Global Variable ADT</b>
+  This assignment consisted of five tasks. The first task centered on building the program of
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/a4/gv.pro.pdf">Global Variable in Prolog</a>. 
+The second task was to do some 
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/a4/gv_demo.pdf">demostration</a> of how the program works
+  . The third task was to implement a  
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/a4/aops.pro.pdf">collection of arithmetic programs</a> that uses the GV base. 
+The fourth task was to
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/a4/aops_demo.pdf">demo</a> those programs. 
+The last task was to create a <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/a4/manual.pdf">manual</a> to the use of GV.
+</p>
+
+<p class="activity"> <b>Assignment 5: Crypto Problem Generation</b>
+For this assignment we had to write a                                                                                    
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/crypto.pdf">Prolog Code</a> to generate and display random Crypto problems.
+Also, generate 10 problems and solve them in a nice <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/crypto_demo.pdf">Demo</a>. 
+</p>
+<div class="DateDiv">
+<span class="DateRange">10/3/2013</span>
+<p class="activity"> <b>Assignment 6: Exhaustive Crypto Problem Solver</b>
+For this assignment we had to                                                                                   
+<a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/combosets.pdf">copy</a> and <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/combosets.demo.pdf">demo</a> combosets.pro.
+ <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/crypto1.pl.pdf">copy</a> and
+ <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/crypto1.demo.pdf">demo</a> a exhaustive crypto problem solver.
+Also, <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/crypto2.pl.pdf">extend</a> the solver to problems of order 5 and
+ <a href="http://moxie.oswego.edu/~emouragu/coursework/csc366/files/crypto2.demo.pdf">demo</a> it. 
+</p>
+</div>
+
+<hr>
+
+<p class="activity"><b>Various external sites relating to course content</b><br> 
+  <a href="https://en.wikipedia.org/wiki/Prolog">Prolog</a> |
+  <a href="https://en.wikipedia.org/wiki/SHRDLU">SHRDLU</a> 
+</p>
+
+
+<h6><a href="#" class="button">Don't Click me</a></h6>
+</body></html>

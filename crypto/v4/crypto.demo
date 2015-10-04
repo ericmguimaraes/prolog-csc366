@@ -1,0 +1,29 @@
+?- consult('crypto.pl').
+%  ../gv.pl compiled 0.00 sec, 1 clauses
+%  ../combosets.pl compiled 0.00 sec, 1 clauses
+% crypto.pl compiled 0.01 sec, 5 clauses
+true.
+
+?- demo(10).
+Problem: numbers = (0,14,9,5,8} and goal = 10
+Solution: ( ( 9 - 5 ) - ( 8 - ( 0 + 14 ) ) )
+Problem: numbers = (10,6,4,0,5} and goal = 7
+Solution: ( ( ( 10 + 6 ) - 5 ) - ( 4 + 0 ) )
+Problem: numbers = (4,13,7,9,3} and goal = 5
+Solution: ( ( ( 4 + 13 ) + ( 7 - 9 ) ) / 3 )
+Problem: numbers = (3,14,9,14,9} and goal = 10
+Solution: ( ( ( 3 * 14 ) - 9 ) - ( 9 + 14 ) )
+Problem: numbers = (13,15,1,11,15} and goal = 10
+Solution: ( ( 13 - 15 ) * ( ( 11 - 1 ) - 15 ) )
+Problem: numbers = (15,12,6,15,8} and goal = 5
+Solution: ( 8 - ( ( 15 + 12 ) / ( 15 - 6 ) ) )
+Problem: numbers = (10,6,13,1,4} and goal = 12
+Solution: ( 4 * ( ( 10 + 6 ) - ( 13 * 1 ) ) )
+Problem: numbers = (10,14,3,2,14} and goal = 13
+Solution: ( ( 14 - ( 10 - 14 ) ) - ( 3 + 2 ) )
+Problem: numbers = (1,4,9,5,13} and goal = 11
+Solution: ( ( ( 13 - 9 ) * ( 1 * 4 ) ) - 5 )
+Problem: numbers = (1,6,2,6,12} and goal = 8
+Solution: ( ( 1 + 6 ) + ( ( 2 * 6 ) / 12 ) )
+true .
+
