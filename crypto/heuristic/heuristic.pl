@@ -1,5 +1,5 @@
-:- consult('gv.pl').
-:- consult('combosets.pl').
+:- consult('../gv.pl').
+:- consult('../combosets.pl').
 
 % SEGMENT 1: RANDOM CRYPTO PROBLEM GENERATION AND STORE IT IN
 % THE FORM: problem(numbers(N1,N2,N3,N4,N5),goal(G))
